@@ -1,0 +1,40 @@
+.main-view {
+    padding: 0 .1rem .1rem .1rem;
+    &>li {
+        text-align: center;
+        font-size: 0;
+        padding-top: .1rem;
+        white-space: nowrap;
+        line-height: .5rem;
+        &>label {
+            width: .3rem;
+            line-height: .3rem;
+            display: inline-block;
+            font-size: .16rem;
+            background-color: #000002;
+            color: #fff;
+            border-radius: .15rem;
+        }
+        &>span {
+            border-radius: .15rem;
+            font-size: .16rem;
+            line-height: .3rem;
+            width: 3rem;
+            display: inline-block;
+            text-align: left;
+            background-color: #8d8d96;
+            color: #fff;
+            margin-left: .15rem;
+            padding-left: .15rem;
+            cursor: pointer;
+            box-shadow: 0.1rem 0.1rem 0.3rem #8d8d96;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: easy-in;
+            &:hover {
+                background-color: #000002;
+                box-shadow: 0.1rem 0.1rem 0.3rem #000002;
+            }
+        }
+    }
+}

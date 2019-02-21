@@ -1,0 +1,37 @@
+<section class='login-view' ng-init='initMethod()'>
+    <div ng-class="{'rotate':isBackSpace}">
+        <article>
+            <header>
+                AngularJs - 学习用例
+            </header>
+            <form name='loginpage' novalidate ui-submit='login()'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-size-12">
+                            <label for='username'>用户名</label>
+                            <input id='username' name='username' ng-model='username' type="text" ui-star required autocomplete="username" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-size-12">
+                            <label for='password'>密码</label>
+                            <input id='password' name='password' ng-minlength="6" ng-maxlength="30" ng-model='password' type="password" ui-star required autocomplete="current-password" />
+                        </div>
+                    </div>
+                </div>
+                <label ng-click='toggleBackSpace()'>忘记密码？</label>
+                <div class="btn-list">
+                    <input type="submit" class="btn btn-submit" value='登录' ng-class="{'submit-gray':loginpage.$invalid}" />
+                </div>
+            </form>
+        </article>
+        <article ng-click='toggleBackSpace()'>
+            <header>
+                说明
+            </header>
+            <p>
+                用户名不为空即可，密码保证6到30位，只有这些简单的校验。
+            </p>
+        </article>
+    </div>
+</section>

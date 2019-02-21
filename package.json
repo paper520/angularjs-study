@@ -1,0 +1,29 @@
+{
+    "name": "angularjs-study",
+    "version": "0.0.1",
+    "description": "This is a project to help use AngularJs",
+    "scripts": {
+        "server": "node_modules/.bin/grunt server",
+        "release": "node_modules/.bin/grunt release",
+        "start": "node_modules/.bin/grunt sassTask"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yelloxing/angularjs-study.git"
+    },
+    "author": "yelloxing",
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-http-server": "^2.1.0",
+        "autoprefixer": "^7.2.5",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-csslint": "^2.0.0",
+        "grunt-contrib-cssmin": "^2.2.1",
+        "grunt-contrib-jshint": "^1.1.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify": "^3.3.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-postcss": "^0.9.0"
+    }
+}

@@ -1,0 +1,6 @@
+<ul ng-init="initMethod()" class='main-view'>
+    <li ng-repeat="row in menuList" ng-click="goto(row.url)">
+        <label>{{$index + 1}}</label>
+        <span>{{row.name}}</span>
+    </li>
+</ul>

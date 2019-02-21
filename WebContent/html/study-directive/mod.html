@@ -1,0 +1,7 @@
+<div ng-init="initMethod()" class='directive-view'>
+    <label class='title'>1.指令基本写法说明：</label>
+    <ui-study showinfo='info' typeinfo="[元素的一个属性值]" on-send='sendInfo()'></ui-study>
+    <label class='title'>2.视图和model直接的格式转换：</label>
+    <input type="text" class='line input' ng-model='dataFormat' name='dataFormat' ui-format>
+    <div class='line'>输入框的model值：{{dataFormat}}</div>
+</div>

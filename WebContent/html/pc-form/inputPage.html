@@ -1,0 +1,21 @@
+<form name="pcForm" novalidate ui-submit="addSubmit()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="rateName">利率模型名称</label>
+                <input id="rateName" name="rateName" ng-model="addparam.rateName" ui-star type="text" required>
+            </div>
+            <div class="col-md-4">
+                <label for="rate">基准利率值</label>
+                <input id="rate" name="rate" ng-model="addparam.rate" ui-star type="text" required>
+            </div>
+            <div class="col-md-4">
+                <label for="rateFlag">利率标志</label>
+                <input id="rateFlag" name="rateFlag" ng-model="addparam.rateFlag" ui-star type="text" required>
+            </div>
+        </div>
+    </div>
+    <div class="btn-list">
+        <input type="submit" class="btn btn-submit" value="提交" v-class="{'submit-gray':pcForm.$invalid}" />
+    </div>
+</form>

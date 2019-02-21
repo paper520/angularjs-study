@@ -1,0 +1,40 @@
+.form-pc {
+    ui-shift {
+        &:first-child {
+            .ui-star-red {
+                right: .1rem;
+            }
+            &>form {
+                &>.container {
+                    &>.row {
+                        &>div {
+                            margin-top: .1rem;
+                            font-size: 0;
+                            &>label {
+                                width: 1.2rem;
+                                display: inline-block;
+                                vertical-align: top;
+                                text-align: right;
+                                line-height: .29rem;
+                                font-size: .13rem;
+                                padding: 0 .22rem 0 0;
+                                position: relative;
+                            }
+                            &>input {
+                                border-radius: .05rem;
+                                border: 1px solid #cccccc;
+                                padding-left: .05rem;
+                                background-color: #fff;
+                                font-size: .13rem;
+                                height: 29px;
+                                line-height: 19px;
+                                width: calc(100% - 1.2rem);
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
